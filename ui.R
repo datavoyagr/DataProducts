@@ -41,6 +41,14 @@ shinyUI(fluidPage(
                 
                 # Show a table summarizing the values entered
                 mainPanel(
+                        #General Instructions for using the app
+                        h4("Instructions"),
+                        helpText("This app uses unemployment data from the Bureau of", 
+                                 "Labor Statistics for the years 2000-2013 and",
+                                 "allows you to plot the data on a line plot. You can",
+                                 "select the date range to view and what states' data you'd",
+                                 "like to visualize in the plot. Data for the unemployment for",
+                                 "the United States is plotted by default."),
                         plotOutput("unemployplot")
                 )
         )
