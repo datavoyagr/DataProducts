@@ -1,7 +1,7 @@
 library(shiny)
 
 
-# Define UI for slider demo application
+# Define UI for unemployement data application
 shinyUI(fluidPage(
         
         #  Application title
@@ -19,7 +19,8 @@ shinyUI(fluidPage(
                                  "you would like to view."),
                         
                         
-                        # Select a year range from 2000 to 2013
+                        # Slider widget
+                        #Select a year range from 2000 to 2013
                         sliderInput("range", "Year Range:",
                                     min = 2000, max = 2013, step=1,
                                     format="####", value = c(2000,2013)),
