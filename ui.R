@@ -40,7 +40,7 @@ shinyUI(fluidPage(
                         
                 ),
                 
-                # Show a table summarizing the values entered
+                
                 mainPanel(
                         #General Instructions for using the app
                         h4("Instructions"),
@@ -50,6 +50,7 @@ shinyUI(fluidPage(
                                  "select the date range to view and what states' data you'd",
                                  "like to visualize in the plot. Data for the unemployment for",
                                  "the United States is plotted by default."),
+                        #place the plot
                         plotOutput("unemployplot")
                 )
         )
